@@ -10,7 +10,6 @@ metadata:
     esphome: enabled
 spec:
   branch: main
-  clientSecretName: auth-hp48c
   repo: https://github.com/NicoOosterwijk/esphome-k8s.git
   targets:
     - clusterGroup: esphome
