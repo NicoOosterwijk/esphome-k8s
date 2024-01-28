@@ -1,0 +1,11 @@
+defaultNamespace: esphome
+
+NamespaceLabels:
+  app.kubernetes.io/managed-by: Helm
+
+NamespaceAnnotations:
+  meta.helm.sh/release-name: esphome
+  meta.helm.sh/release-namespace: esphome
+
+kustomize:
+  dir: ""
