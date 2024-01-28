@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  labels:
+    app: esphome
+  name: esphome-ingress
+  namespace: esphome
+spec:
+  rules:
+    - host: esphome.digitalinfo.local
+      http:
+        paths:
+          - backend:
+              service:
+                name: esphome-svc
+                port:
+                  number: 6052
+            path: /
+            pathType: Prefix
